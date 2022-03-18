@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "code_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-type.code-type"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code_service": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-service.code-service"
+    },
+    "code_status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-status.code-status"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false
+    },
+    "plan_startdate": {
+      "type": "date"
+    },
+    "plan_enddate": {
+      "type": "date"
+    },
+    "startdate": {
+      "type": "date"
+    },
+    "enddate": {
+      "type": "datetime"
+    },
+    "last_workupdate": {
+      "type": "date"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "project_tasks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-task.project-task",
+      "mappedBy": "project"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "code_tasks",
+  "info": {
+    "singularName": "code-task",
+    "pluralName": "code-tasks",
+    "displayName": "code_task"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code_service": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::code-service.code-service",
+      "inversedBy": "code_tasks"
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sort": {
+      "max": 999,
+      "min": 0,
+      "type": "integer"
+    },
+    "used": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

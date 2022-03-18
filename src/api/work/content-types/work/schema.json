@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "works",
+  "info": {
+    "singularName": "work",
+    "pluralName": "works",
+    "displayName": "work",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project"
+    },
+    "project_task": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-task.project-task"
+    },
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "code_progress": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-progress.code-progress"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "working_day": {
+      "type": "date"
+    },
+    "working_time": {
+      "type": "integer",
+      "default": 0
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}
