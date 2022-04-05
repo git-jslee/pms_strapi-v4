@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scode_teams",
+  "info": {
+    "singularName": "scode-team",
+    "pluralName": "scode-teams",
+    "displayName": "scode_team"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sort": {
+      "type": "integer"
+    }
+  }
+}

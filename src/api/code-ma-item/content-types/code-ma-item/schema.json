@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "code_ma_items",
+  "info": {
+    "singularName": "code-ma-item",
+    "pluralName": "code-ma-items",
+    "displayName": "code_ma_item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code_ma_provider": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-ma-provider.code-ma-provider"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sort": {
+      "type": "integer"
+    },
+    "code_ma_inex": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-ma-inex.code-ma-inex"
+    }
+  }
+}

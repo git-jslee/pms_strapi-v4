@@ -50,7 +50,7 @@
       "type": "date"
     },
     "enddate": {
-      "type": "datetime"
+      "type": "date"
     },
     "last_workupdate": {
       "type": "date"

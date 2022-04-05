@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maintenances",
+  "info": {
+    "singularName": "maintenance",
+    "pluralName": "maintenances",
+    "displayName": "maintenance"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "scode_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::scode-item.scode-item"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "scode_team": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::scode-team.scode-team"
+    },
+    "used": {
+      "type": "boolean",
+      "default": true
+    },
+    "contracted": {
+      "type": "boolean",
+      "default": false
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

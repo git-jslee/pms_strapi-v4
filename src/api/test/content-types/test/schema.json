@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "test",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "venter": {
+      "type": "enumeration",
+      "enum": [
+        "카페24-웹호스팅11",
+        "카페24-SSL22",
+        "CARE"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "integer"
+    }
+  }
+}

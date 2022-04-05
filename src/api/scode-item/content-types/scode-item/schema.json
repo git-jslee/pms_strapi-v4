@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scode_items",
+  "info": {
+    "singularName": "scode-item",
+    "pluralName": "scode-items",
+    "displayName": "scode_item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "scode_division": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::scode-division.scode-division"
+    },
+    "sort": {
+      "type": "integer"
+    },
+    "maintenance": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

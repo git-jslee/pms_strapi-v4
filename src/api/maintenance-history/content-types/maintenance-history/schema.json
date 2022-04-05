@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maintenance_histories",
+  "info": {
+    "singularName": "maintenance-history",
+    "pluralName": "maintenance-histories",
+    "displayName": "maintenance_history"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code_ma_inex": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-ma-inex.code-ma-inex"
+    },
+    "maintenance": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::maintenance.maintenance"
+    },
+    "code_ma_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-ma-item.code-ma-item"
+    },
+    "warranty_from": {
+      "type": "date",
+      "required": true
+    },
+    "warranty_to": {
+      "type": "date",
+      "required": true
+    },
+    "code_ma_term": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-ma-term.code-ma-term"
+    },
+    "payment_date": {
+      "type": "date",
+      "required": true
+    },
+    "cost": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "cost_m": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "memo": {
+      "type": "string"
+    }
+  }
+}

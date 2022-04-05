@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scode_probabilities",
+  "info": {
+    "singularName": "scode-probability",
+    "pluralName": "scode-probabilities",
+    "displayName": "scode_probability"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sort": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scode_divisions",
+  "info": {
+    "singularName": "scode-division",
+    "pluralName": "scode-divisions",
+    "displayName": "scode_division"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sort": {
+      "type": "integer"
+    }
+  }
+}
