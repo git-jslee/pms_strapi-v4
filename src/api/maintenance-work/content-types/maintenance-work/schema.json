@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maintenance_works",
+  "info": {
+    "singularName": "maintenance-work",
+    "pluralName": "maintenance-works",
+    "displayName": "maintenance_work",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "maintenance": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::maintenance.maintenance"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "code_ma_support": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-ma-support.code-ma-support"
+    },
+    "working_day": {
+      "type": "date"
+    },
+    "working_time": {
+      "type": "integer"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "description": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

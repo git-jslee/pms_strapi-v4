@@ -66,6 +66,12 @@
     "worker": {
       "type": "boolean",
       "default": false
+    },
+    "code_pj_team": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::code-pj-team.code-pj-team",
+      "inversedBy": "users"
     }
   }
 }

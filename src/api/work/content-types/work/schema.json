@@ -46,6 +46,15 @@
     },
     "description": {
       "type": "string"
+    },
+    "code_pj_team": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::code-pj-team.code-pj-team"
+    },
+    "deleted": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

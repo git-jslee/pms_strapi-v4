@@ -4,7 +4,8 @@
   "info": {
     "singularName": "maintenance",
     "pluralName": "maintenances",
-    "displayName": "maintenance"
+    "displayName": "maintenance",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,7 +22,7 @@
       "relation": "oneToOne",
       "target": "api::scode-item.scode-item"
     },
-    "name": {
+    "title": {
       "type": "string",
       "required": true
     },
@@ -40,6 +41,12 @@
     },
     "description": {
       "type": "string"
+    },
+    "maintenance_histories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::maintenance-history.maintenance-history",
+      "mappedBy": "maintenance"
     }
   }
 }

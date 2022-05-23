@@ -4,7 +4,8 @@
   "info": {
     "singularName": "maintenance-history",
     "pluralName": "maintenance-histories",
-    "displayName": "maintenance_history"
+    "displayName": "maintenance_history",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,8 +19,9 @@
     },
     "maintenance": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::maintenance.maintenance"
+      "relation": "manyToOne",
+      "target": "api::maintenance.maintenance",
+      "inversedBy": "maintenance_histories"
     },
     "code_ma_item": {
       "type": "relation",

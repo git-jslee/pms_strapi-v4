@@ -1,7 +1,7 @@
 {
   "name": "pms-strapi-v-4",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -11,9 +11,9 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.1.5",
-    "@strapi/plugin-users-permissions": "4.1.5",
-    "@strapi/plugin-i18n": "4.1.5",
+    "@strapi/strapi": "4.1.11",
+    "@strapi/plugin-users-permissions": "4.1.11",
+    "@strapi/plugin-i18n": "4.1.11",
     "mysql": "2.18.1"
   },
   "author": {

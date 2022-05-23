@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "code_pj_teams",
+  "info": {
+    "singularName": "code-pj-team",
+    "pluralName": "code-pj-teams",
+    "displayName": "code_pj_team"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sort": {
+      "type": "integer"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "code_pj_team"
+    }
+  }
+}
