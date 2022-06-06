@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "codebooks",
+  "info": {
+    "singularName": "codebook",
+    "pluralName": "codebooks",
+    "displayName": "codebook",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "sc-input",
+        "sc-rev_1st",
+        "sc-rev_2nd",
+        "sc-orgname"
+      ]
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "integer",
+      "max": 999,
+      "min": 100
+    },
+    "memo": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scrapes",
+  "info": {
+    "singularName": "scrape",
+    "pluralName": "scrapes",
+    "displayName": "scrape",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type_orgname": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::codebook.codebook"
+    },
+    "org_no": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "check_date": {
+      "type": "date"
+    },
+    "check_result": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::codebook.codebook"
+    },
+    "reg_date": {
+      "type": "date"
+    },
+    "period": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "momo": {
+      "type": "string"
+    }
+  }
+}

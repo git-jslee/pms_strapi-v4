@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scrape_reviews",
+  "info": {
+    "singularName": "scrape-review",
+    "pluralName": "scrape-reviews",
+    "displayName": "scrape_review",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type_input": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::codebook.codebook"
+    },
+    "type_orgname": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::codebook.codebook"
+    },
+    "title": {
+      "type": "string"
+    },
+    "review_date": {
+      "type": "date"
+    },
+    "review_result": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::codebook.codebook"
+    },
+    "review_opnion": {
+      "type": "string"
+    },
+    "reg_date": {
+      "type": "date"
+    },
+    "period": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "attachment": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
