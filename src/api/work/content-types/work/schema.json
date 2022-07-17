@@ -55,6 +55,12 @@
     "deleted": {
       "type": "boolean",
       "default": false
+    },
+    "revision": {
+      "type": "integer",
+      "default": 0,
+      "max": 10,
+      "min": 0
     }
   }
 }

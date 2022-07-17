@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project-task",
     "pluralName": "project-tasks",
-    "displayName": "project_task"
+    "displayName": "project_task",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -29,6 +30,31 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::code-progress.code-progress"
+    },
+    "cus_task": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "integer",
+      "default": 0,
+      "max": 10,
+      "min": 0
+    },
+    "last_workupdate": {
+      "type": "date"
+    },
+    "total_time": {
+      "type": "integer",
+      "default": 0
+    },
+    "manpower": {
+      "type": "float",
+      "default": 1,
+      "max": 10,
+      "min": 0
+    },
+    "start_workupdate": {
+      "type": "date"
     }
   }
 }

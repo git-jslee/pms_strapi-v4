@@ -56,7 +56,8 @@
       "type": "date"
     },
     "price": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "project_tasks": {
       "type": "relation",
@@ -66,6 +67,27 @@
     },
     "description": {
       "type": "string"
+    },
+    "contracted": {
+      "type": "boolean",
+      "default": false
+    },
+    "scode_team": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::scode-team.scode-team"
+    },
+    "project_costs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-cost.project-cost",
+      "mappedBy": "project"
+    },
+    "project_changes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-change.project-change",
+      "mappedBy": "project"
     }
   }
 }

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_costs",
+  "info": {
+    "singularName": "project-cost",
+    "pluralName": "project-costs",
+    "displayName": "project_cost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "project_costs"
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "cost": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "date"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}
