@@ -88,6 +88,12 @@
       "relation": "oneToMany",
       "target": "api::project-change.project-change",
       "mappedBy": "project"
+    },
+    "pjt_issues": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pjt-issue.pjt-issue",
+      "mappedBy": "project"
     }
   }
 }

@@ -72,6 +72,13 @@
       "relation": "manyToOne",
       "target": "api::code-pj-team.code-pj-team",
       "inversedBy": "users"
+    },
+    "level": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "max": 99,
+      "min": 0
     }
   }
 }

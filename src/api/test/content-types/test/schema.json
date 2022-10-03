@@ -25,6 +25,12 @@
     },
     "sort": {
       "type": "integer"
+    },
+    "number": {
+      "type": "float"
+    },
+    "test_test": {
+      "type": "string"
     }
   }
 }

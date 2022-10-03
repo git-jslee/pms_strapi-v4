@@ -53,8 +53,15 @@
       "max": 10,
       "min": 0
     },
-    "start_workupdate": {
+    "startdate": {
       "type": "date"
+    },
+    "plan_startdate": {
+      "type": "date"
+    },
+    "other_totaltime": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

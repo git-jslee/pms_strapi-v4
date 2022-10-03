@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pjt_issues",
+  "info": {
+    "singularName": "pjt-issue",
+    "pluralName": "pjt-issues",
+    "displayName": "pjt_issue",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "pjt_issues"
+    },
+    "name": {
+      "type": "string"
+    },
+    "solved": {
+      "type": "boolean",
+      "default": false
+    },
+    "risk": {
+      "type": "enumeration",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "issue_date": {
+      "type": "date"
+    },
+    "resolution_date": {
+      "type": "date"
+    },
+    "memo": {
+      "type": "text"
+    }
+  }
+}

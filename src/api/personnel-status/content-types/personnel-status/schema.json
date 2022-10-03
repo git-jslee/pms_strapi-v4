@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personnel_statuses",
+  "info": {
+    "singularName": "personnel-status",
+    "pluralName": "personnel-statuses",
+    "displayName": "personnel_status",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code_pj_team": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::code-pj-team.code-pj-team",
+      "inversedBy": "personnel_statuses"
+    },
+    "number": {
+      "type": "integer",
+      "default": 0,
+      "max": 20,
+      "min": 0
+    },
+    "remark": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

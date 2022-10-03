@@ -4,7 +4,8 @@
   "info": {
     "singularName": "code-pj-team",
     "pluralName": "code-pj-teams",
-    "displayName": "code_pj_team"
+    "displayName": "code_pj_team",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,25 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "plugin::users-permissions.user",
+      "mappedBy": "code_pj_team"
+    },
+    "abbr": {
+      "type": "string"
+    },
+    "personnel_statuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::personnel-status.personnel-status",
+      "mappedBy": "code_pj_team"
+    },
+    "used": {
+      "type": "boolean",
+      "default": true
+    },
+    "team_change_histories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team-change-history.team-change-history",
       "mappedBy": "code_pj_team"
     }
   }
