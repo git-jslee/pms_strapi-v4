@@ -14,7 +14,8 @@
   "attributes": {
     "name_eng": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "name": {
       "type": "string",
