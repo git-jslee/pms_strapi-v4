@@ -30,8 +30,10 @@
       "enum": [
         "high",
         "medium",
-        "low"
-      ]
+        "low",
+        "info"
+      ],
+      "default": "info"
     },
     "issue_date": {
       "type": "date"

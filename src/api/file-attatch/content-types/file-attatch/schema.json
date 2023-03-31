@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "file_attatches",
+  "info": {
+    "singularName": "file-attatch",
+    "pluralName": "file-attatches",
+    "displayName": "file_attatch"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sales_status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sales-status.sales-status"
+    },
+    "memo": {
+      "type": "string"
+    },
+    "file": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
